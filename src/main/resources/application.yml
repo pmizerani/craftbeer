@@ -1,3 +1,14 @@
 server:
-  port: 9000
+  port: 8000
   context-path: /beerhouse
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/craftbeer
+    username: root
+    password: q1w2e3r4
+  jpa:
+    show-sql: false
+    properties:
+      hibernate:
+        format_sql: true

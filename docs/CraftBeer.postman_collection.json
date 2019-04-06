@@ -1,0 +1,166 @@
+{
+	"info": {
+		"_postman_id": "9f8b3089-1d2f-45e2-951f-fa01f6072759",
+		"name": "CraftBeer",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:8000/beer",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\":\"Cerveja Puro Malte\",\n\t\"ingredients\":\"Malte, Lúpulo\",\n\t\"alcoholContent\":\"4,8%\",\n\t\"price\":\"5.49\",\n\t\"category\":\"Puro Malte\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8000/beer",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"beer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8000/beer/1",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\":\"Cerveja Branca\",\n\t\"ingredients\":\"milho\",\n\t\"alcoholContent\":\"3%\",\n\t\"price\":\"5.20\",\n\t\"category\":\"Branca\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8000/beer/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"beer",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8000/beer/1",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\n\t\"name\":\"Cerveja comum\",\n\t\"category\": \"Comum\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8000/beer/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"beer",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8000/beer",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8000/beer",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"beer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8000/beer/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8000/beer/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"beer",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8000/beer/1",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8000/beer/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"beer",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
