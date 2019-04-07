@@ -1,3 +1,6 @@
+* Script do banco de dados no diretório `/database`
+* Script de test do Postman no diretório `/docs`
+
 # Cadastro de cervejas artesanais
 
 O objetivo deste projeto é avaliar o desenvolvimento de uma aplicação java utilizando Spring e APIs.
